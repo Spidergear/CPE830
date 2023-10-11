@@ -11,7 +11,7 @@ patch -p1 < ../3133.patch
 cd ..
 cp config_ikeja openwrt/.config
 #chown -R admin:admin kuwfi830
-cd kuwfi830
+cd openwrt
 make defconfig
 make -j16 download
 make -j16 V=s
